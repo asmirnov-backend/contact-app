@@ -1,0 +1,13 @@
+<div>
+    <h2>Archive Status</h2>
+    <p>Status: <%= archiver.status() %>
+    </p>
+    <p>Progress: <%= archiver.progress() * 100 %>%</p>
+    <form action="/contacts/archive" method="post">
+        <button type="submit">Start Archive</button>
+    </form>
+    <form action="/contacts/archive" method="delete">
+        <button type="submit">Reset Archive</button>
+    </form>
+    <a href="/contacts/archive/file">Download Archive</a>
+</div>
